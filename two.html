@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="perent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const perent = document.querySelectorAll('perent')
+    console.log(perent)
+    console.log(perent.children);
+    console.log(perent.children[1].innerHTML);
+    for (let i = 0; i < perent.children.length; i++) {
+    console.log(perent.children[i].innerHTML);
+        
+    }
+    perent.children[1].style.color = 'orange'
+    
+        
+    
+
+
+</script>
+</html>
